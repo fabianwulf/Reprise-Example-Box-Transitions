@@ -1,0 +1,175 @@
+body
+{
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	background: #444 url('img/background_tile.png') top left repeat;
+	-reprise-transition: background-color 1s;
+}
+
+#claim, #noneActive #claim
+{
+	position: absolute;
+	bottom: 1%;
+	right: 1%;
+	font-family: 'Helvetica Neue Condensed Bold';
+	fontsEmbed: embed;
+	color: #fff;
+	font-size: 26pt;
+	text-transform: uppercase;
+	text-align: left;
+	selectable: false;
+	-reprise-transition: color 750ms easeInOutQuint, right, bottom;
+	z-index: 0;
+}
+
+#leftActive #claim
+{ 
+	color: #fff; 
+	bottom: 1%;
+	right: 1%;
+}
+
+#middleActive #claim
+{
+	color: #262626;
+	bottom: 94%;
+	right: 1%;
+}
+
+#rightActive #claim
+{ 
+	color: #262626; 
+	bottom: 1%;
+	right: 70%;
+}
+
+#leftActive
+{
+	background-color: #ff8cbc;
+}
+#middleActive
+{
+	background-color: #fff58c;
+}
+#rightActive
+{
+	background-color: #b8ff8c;
+}
+
+#noneActive
+{
+	background-color: #444;
+}
+
+#content
+{
+	position: absolute;
+	left:301px;
+	bottom: -380px;
+	width: 350px;
+	height: 350px;
+	
+	-reprise-transition: background-gradient .75s easeOutQuint, border-radius, width, height, bottom, left;
+	background-gradient: linear 90 colors(#333 #333) ratios(0 255);
+	border: 15px solid #262626;
+	z-index: 1;
+}
+
+#leftActive #content
+{
+	background-gradient: linear 360 colors(#000c #ff006ccc) ratios(0 255); 
+	left: 50px;
+	width: 500px;
+}
+
+#middleActive #content
+{
+	background-gradient: linear 270 colors(#000c #ffea00cc) ratios(0 255); 
+	left: 226px;
+	width: 500px;
+}
+
+#rightActive #content
+{
+	background-gradient: linear 180 colors(#000c #60ff00cc) ratios(0 255); 
+	left: 400px;
+	width: 500px;
+}
+
+#noneActive #content
+{	
+	background-gradient: linear 90 colors(#333 #333) ratios(0 255);
+}
+
+.show #content
+{
+	bottom: 20px;
+}
+
+/***
+*	button navigation
+***/
+
+#navigation
+{
+	position: absolute;
+	top: -100px;
+	margin: auto;
+	padding: 5px;
+	background: #262626;
+	-reprise-transition: top .5s easeOutQuint;
+	z-index: 2;
+}
+
+.show #navigation
+{
+	top: 40px;
+}
+
+.navigationItem
+{
+	cursor: pointer;
+	width: 60px;
+	height: 25px;
+	float: left;
+	margin: 7px;
+	padding: 20px;
+	padding-top: 30px;
+	background-color: #0f0;
+	-reprise-transition: top 250ms easeOutQuint, background-color, left, width, color, margin, height; 
+}
+
+.navigationItem:hover
+{
+	width: 150px;
+	background-color: #0ff !important;
+	margin: 7px 14px;
+	color: #fff;
+}
+
+.navigationFontStyle
+{
+	font-family: 'Helvetica Neue Condensed Bold';
+	fontsEmbed: embed;
+	color: #111;
+	font-size: 12pt;
+	text-transform: uppercase;
+	text-align: center;
+	selectable: false;
+}
+
+#leftButton
+{
+	background-color: #ff006c;
+}
+
+#middleButton
+{
+	background-color: #ffea00;
+}
+
+#rightButton
+{
+	background-color: #60ff00;
+}

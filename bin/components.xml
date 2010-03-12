@@ -1,0 +1,11 @@
+<html>
+	<body>
+		<div id="navigation">
+			<button id="leftButton" name="navigationItems" class="navigationItem navigationFontStyle" label="Lefty"></button>
+			<button id="middleButton" name="navigationItems" class="navigationItem navigationFontStyle" label="Middleton"></button>
+			<button id="rightButton" name="navigationItems" class="navigationItem navigationFontStyle" label="Righto"></button>
+		</div>
+		<div id="content"></div>
+		<label id="claim">Reprise-Framework.org</label>
+	</body>
+</html>

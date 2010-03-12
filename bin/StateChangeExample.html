@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Reprise CSS Transitions</title>
+<script type="text/javascript" src="js/swfobject.js"></script>
+<script type="text/javascript" src="js/swfaddress.js"></script>
+
+<style type="text/css">
+<!--
+html {
+	overflow: hidden;
+}
+
+body {
+	text-align: center;
+	background-color: #666;
+}
+
+#flashcontent {
+	width: 982px;
+	height: 564px;
+	margin-left: auto;
+  	margin-right: auto;
+  	margin-top: 50px;
+  	background:#000000;
+}
+-->
+</style>
+
+
+</head>
+<body>
+<div id="flashcontent"></div>
+  	<script type="text/javascript" language="JavaScript">
+ 	// <![CDATA[\
+ 
+   	var so = new SWFObject("flash/StateChangeExampleApp.swf", "flash", "982", "564", "9", "#000000");
+   	so.addParam("allowScriptAccess", "always");
+   	so.addParam("allowFullScreen", "true");
+   	so.addParam("quality", "high");
+	so.addParam("scale", "noscale");
+   	so.addParam("bgcolor", "#000000");
+ 
+    so.addVariable("arrSlider", "The Book of Eli~Postapokalyptisches Actionabenteuer, in dem Denzel Washington als mythischer Held den spirituellen Schl&uuml;ssel f&uuml;r den Wiederaufbau der Zivilisation besch&uuml;tzt.~/art/web/film/3a/42/1a/116686_poster_gross_80x120.jpg~/art/upload/6354_book-of-eli_slider.jpg~/FilmeundStars/Film/The-Book-of-Eli/18456?tr=t01376|Berlinale 2010~In der Zeit vom 11. - 21. Februar 2010 pr&auml;sentieren wir ausschliesslich Filme der Berlinale.~/art/web/upload/71/0c/2d/6351_berlinale_plakat_80x120.jpg~/art/upload/6350_berninale2010.jpg~/Programm/AktuellesProgramm/Center=12;WeekStart=20100210?tr=t01374|Wolfman~Remake des gleichnamigen Horror-Klassikers von 1941 &uuml;ber einen Mann, der sich durch einen Fluch in eine rei&szlig;ende Bestie verwandelt.~/art/web/film/ff/15/b2/105158_poster_gross_80x120.jpg~/art/upload/6298_wolfman_slider.jpg~/FilmeundStars/Film/Wolfman/18277?tr=t01359|Drachenz&auml;hmen leicht gemacht~DRACHENZ&Auml;HMEN LEICHT GEMACHT entf&uuml;hrt seine Zuschauer auf eine faszinierende Wikinger-Insel, wo der Kampf gegen raffinierte Drachen zum Alltag geh&ouml;rt!~/art/web/film/d9/6e/21/103736_cxxposter_2_gross_80x120.jpg~/art/upload/6345_slider_dlg.jpg~/FilmeundStars/Film/Drachenzaehmen-leicht-gemacht/18469?tr=t01372");  
+   	so.write("flashcontent");
+  
+ 	// ]]>
+  	</script>
+</body>
+</html>
