@@ -148,6 +148,14 @@ body
 	color: #fff;
 }
 
+.navigationItem:checked
+{
+	width: 150px;
+	background-color: #444 !important;
+	margin: 7px 14px;
+	color: #fff;
+}
+
 .navigationFontStyle
 {
 	font-family: 'Helvetica Neue Condensed Bold';

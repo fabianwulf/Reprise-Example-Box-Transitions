@@ -9,6 +9,7 @@ body
 
 #claim, #noneActive #claim
 {
+	cursor: pointer;
 	position: absolute;
 	bottom: 1%;
 	right: 1%;
@@ -19,6 +20,7 @@ body
 	text-transform: uppercase;
 	text-align: left;
 	selectable: false;
+	background_color: #000;
 	-reprise-transition: color 750ms easeInOutQuint, right, bottom;
 	z-index: 0;
 }
@@ -46,15 +48,15 @@ body
 
 #leftActive
 {
-	background-color: #ff8cbc;
+	background-color: #c15d4f;
 }
 #middleActive
 {
-	background-color: #fff58c;
+	background-color: #f4f47f;
 }
 #rightActive
 {
-	background-color: #b8ff8c;
+	background-color: #63aa7f;
 }
 
 #noneActive
@@ -78,21 +80,21 @@ body
 
 #leftActive #content
 {
-	background-gradient: linear 360 colors(#000c #ff006ccc) ratios(0 255); 
+	background-gradient: linear 360 colors(#000c #753830cc) ratios(0 255); 
 	left: 50px;
 	width: 500px;
 }
 
 #middleActive #content
 {
-	background-gradient: linear 270 colors(#000c #ffea00cc) ratios(0 255); 
+	background-gradient: linear 270 colors(#000c #a8a858cc) ratios(0 255); 
 	left: 226px;
 	width: 500px;
 }
 
 #rightActive #content
 {
-	background-gradient: linear 180 colors(#000c #60ff00cc) ratios(0 255); 
+	background-gradient: linear 180 colors(#000c #375e47cc) ratios(0 255); 
 	left: 400px;
 	width: 500px;
 }
@@ -137,13 +139,21 @@ body
 	padding: 20px;
 	padding-top: 30px;
 	background-color: #0f05;
-	-reprise-transition: top 250ms easeOutQuint, background-color, left, width, color, margin, height; 
+	-reprise-transition: top 250ms easeOutQuint, background-color, left, width, color, margin, height, font-size;
 }
 
 .navigationItem:hover
 {
 	width: 150px;
-	background-color: #0ffa !important;
+	background-color: #0af !important;
+	margin: 7px 14px;
+	color: #fff;
+}
+
+.navigationItem:checked
+{
+	width: 150px;
+	background-color: #004266 !important;
 	margin: 7px 14px;
 	color: #fff;
 }
@@ -161,15 +171,15 @@ body
 
 #leftButton
 {
-	background-color: #ff006c;
+	background-color: #c15d4f;
 }
 
 #middleButton
 {
-	background-color: #ffea00;
+	background-color: #f4f47f;
 }
 
 #rightButton
 {
-	background-color: #60ff00;
+	background-color: #63aa7f;
 }
